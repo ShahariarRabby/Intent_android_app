@@ -14,7 +14,7 @@
 
 ## Note for beginner: 
 <ol>
-<li> java file at: app/src/main/java/com/rabby/counter/ </li>
+<li> java file at: app/src/main/java/com/rabby//activity/ </li>
 <li> Layout file at: app/src/main/res/layout/ </li>
 </ol>
 
