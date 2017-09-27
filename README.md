@@ -1,5 +1,23 @@
 # Intent android apk
 
+**Used Constrain layout in xml**<br>
+**Build with android api 15 (android 4.0.3)**
+
+### Tested Device
+<ul>
+<li>nexus 5x (4.4.4)</li>
+<li>nexus 5x (8.0)</li>
+<li>Walton C4 (4.4.2)</li>
+</ul>
+
+**This app is Made for University's Android Class**
+
+## Note for beginner: 
+<ol>
+<li> java file at: app/src/main/java/com/rabby/counter/ </li>
+<li> Layout file at: app/src/main/res/layout/ </li>
+</ol>
+
 ### <a href="https://developer.android.com/training/basics/firstapp/starting-activity.html">How to create  Explicit Intent?</a>
 ### <a href="https://developer.android.com/guide/webapps/webview.html">How to create Implicit Intent(for browser)?</a>
 
