@@ -8,12 +8,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-/**
- * Created by Rabby on 9/27/2017.
- */
 
 public class ImpulsiveActivity extends AppCompatActivity {
-
     TextView textView2;
     EditText editText2;
 

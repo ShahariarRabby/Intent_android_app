@@ -10,6 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText editText;
     public static final String Extra_message = "Extra";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

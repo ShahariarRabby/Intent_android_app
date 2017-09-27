@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Activity</string>
+    <string name="type_url">Type Url:</string>
+    <string name="go_implicit_intent">Go Implicit Intent</string>
+    <string name="url">url</string>
+    <string name="open_browser">open browser</string>
 </resources>
