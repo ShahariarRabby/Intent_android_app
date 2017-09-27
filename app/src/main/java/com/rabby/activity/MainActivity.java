@@ -10,6 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText editText;
     public static final String Extra_message = "Extra";
+    private final String TEXT_CONTENTS = "TEXT_CONTENTS";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,4 +25,18 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(Extra_message,s);
         startActivity(intent);
     }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putString(TEXT_CONTENTS, editText.getText().toString());
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        String saveString = savedInstanceState.getString(TEXT_CONTENTS);
+        editText.setText(saveString);
+    }
+
 }

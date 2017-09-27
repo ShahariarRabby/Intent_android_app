@@ -12,6 +12,7 @@ import android.widget.TextView;
 public class ImpulsiveActivity extends AppCompatActivity {
     TextView textView2;
     EditText editText2;
+    private final String TEXT_CONTENTS = "TEXT_CONTENTS";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -24,7 +25,6 @@ public class ImpulsiveActivity extends AppCompatActivity {
         String message = intent.getStringExtra(MainActivity.Extra_message);
         editText2.setText(message);
         textView2.setText(message);
-
     }
 
     public void goSite(View view) {
@@ -34,6 +34,19 @@ public class ImpulsiveActivity extends AppCompatActivity {
         }
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
         startActivity(browserIntent);
+    }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putString(TEXT_CONTENTS, editText2.getText().toString());
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        String saveString = savedInstanceState.getString(TEXT_CONTENTS);
+        editText2.setText(saveString);
+        textView2.setText(saveString);
     }
 }
